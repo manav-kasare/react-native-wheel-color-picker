@@ -554,7 +554,7 @@ module.exports = class ColorPicker extends Component {
 			borderRadius: sliderSize/2,
 			height: sliderSize,
 			width: sliderSize,
-			opacity,
+			opacity: 1,
 		}
 		const sliderStyle = {
 			width:row?sliderSize:'100%',
