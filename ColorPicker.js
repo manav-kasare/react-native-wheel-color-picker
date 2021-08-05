@@ -539,7 +539,7 @@ module.exports = class ColorPicker extends Component {
 			transform: [{translateX:-thumbSize/2},{translateY:-thumbSize/2}],
 			left: this.panX,
 			top: this.panY,
-			opacity,
+			opacity: 1,
 			////
 			// transform: [{translateX:this.panX},{translateY:this.panY}],
 			// left: -this.props.thumbSize/2,
@@ -688,9 +688,9 @@ const ss = StyleSheet.create({
 		// padding: 16,
 	},
 	swatch: {
-		width: 20,
-		height: 20,
-		borderRadius: 10,
+		width: 30,
+		height: 30,
+		borderRadius: 15,
 		// borderWidth: 1,
 		borderColor: '#8884',
 		alignItems: 'center',
