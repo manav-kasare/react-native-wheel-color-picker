@@ -135,11 +135,17 @@ const hex2Rgb = (hex) => {
 
 const hsv2Hex = (h, s, v) => {
 	let rgb = hsv2Rgb(h, s, v)
+	if(rgb.r === NaN ||rgb.g === NaN ||rgb.b === NaN  ){
+		return rgb2Hex(0,0,0)
+	} 
 	return rgb2Hex(rgb.r, rgb.g, rgb.b)
 }
 
 const hex2Hsv = (hex) => {
 	let rgb = hex2Rgb(hex)
+	if(rgb.r === NaN ||rgb.g === NaN ||rgb.b === NaN  ){
+		return rgb2Hsv(0,0,0)
+	} 
 	return rgb2Hsv(rgb.r, rgb.g, rgb.b)
 }
 
